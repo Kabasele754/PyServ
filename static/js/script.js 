@@ -1,0 +1,36 @@
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+});
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+
+    fetch('/submit_contact', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        Toast.fire({
+            icon: 'success',
+            title: 'Message envoyé avec succès !'
+        });
+        this.reset();
+    })
+    .catch(error => {
+        Toast.fire({
+            icon: 'error',
+            title: 'Une erreur s\'est produite lors de l\'envoi du message.'
+        });
+    });
+});
