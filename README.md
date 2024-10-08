@@ -66,6 +66,15 @@ pyServ/
 - Personnalisez le comportement JavaScript dans `static/js/script.js`
 - Modifiez `server.py` pour ajouter de nouvelles fonctionnalités ou routes
 
+## Les captures
+
+![Screenshot 2024-10-08 at 12.57.52 in the afternoon.png](static%2Fimg%2FScreenshot%202024-10-08%20at%2012.57.52%20in%20the%20afternoon.png)
+
+![Screenshot 2024-10-08 at 12.58.07 in the afternoon.png](static%2Fimg%2FScreenshot%202024-10-08%20at%2012.58.07%20in%20the%20afternoon.png)
+
+![Screenshot 2024-10-08 at 12.57.31 in the afternoon.png](static%2Fimg%2FScreenshot%202024-10-08%20at%2012.57.31%20in%20the%20afternoon.png)
+
+
 ## Contribution
 
 Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request.
